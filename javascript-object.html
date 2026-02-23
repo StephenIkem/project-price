@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+           
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            gap: 5rem;
+            width: 50%;
+            margin: 0 auto;
+            height: 100vh;
+
+        }
+        .price{
+            width: 50%;
+            background-color: aquamarine;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .price p{
+            font-size: 3rem;
+        }
+
+        .tool-tip{
+            position: absolute;
+            bottom: -1.5rem;
+            background-color: lightgray;
+            color: black;
+            opacity: 0;
+            padding: 10px;
+        }
+
+        .price:hover .tool-tip{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+    <div class="price"><p>$</p> <div class="tool-tip">Inexpensive</div></div>
+    <div class="price"><p>$$</p> <div class="tool-tip">Moderate</div></div>
+    <div class="price"><p>$$$</p> <div class="tool-tip">pricey</div></div>
+    </section>
+ 
+</body>
+</html>
